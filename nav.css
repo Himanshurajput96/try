@@ -1,0 +1,30 @@
+.navbar-default {
+
+    background-color: black ;
+}
+
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: white;
+    color: red;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+
+
+ /* .navbar-default .navbar-nav > li > a:visited {
+    color: white;
+} */
+
+.navbar-default .navbar-nav > li > a:focus-within {
+    color: red;
+}
