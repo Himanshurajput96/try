@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="nav.css">
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.5.js"></script>
 
 
-    <script src="navbar.js"></script>
-    <script src=""></script>
+    <link rel="stylesheet" href="Designers/nav.css">
+
+
+    <script src="Designers/Services/service.js"></script>
+    <script src="Designers/navbar.js"></script>
+    <script src="Designers/DesignerList/swag.js"></script>
+    <script src="Designers/DesignerDesc/description.js"></script>
 
     <meta charset="utf-8">
     <title></title>
@@ -18,7 +25,40 @@
 
   <body ng-app="app">
     <div mainbar>
+
     </div>
+
+    <div ui-view>
+    </div>
+
+    
+
+
+    <!-- <div class="container">
+        <div class="row" data-ng-show="details.length == 0">
+          <div class="col-span-12">
+          No results found
+        </div>
+        </div>
+        <div class="row" data-ng-show="details.length > 0">
+          <div class="col-span-12">
+            <uib-pagination ng-model="curPage" total-items="details.length" max-size="maxSize" items-per-page="itemsPerPage" boundary-links="true"></uib-pagination>
+          </div>
+        </div>
+      </div> -->
+    <!-- <div ui-view>
+    </div> -->
+
+    <!-- <div ng-controller="list"  >
+        <div ng-repeat="detail in details" class="col-sm-2" >
+        <a href="#" ><img src="https://dev.datetheramp.com/static/catalog/160/{{detail.image_url}}" height="350" width="250">
+        <center>{{detail.name}}</center></a>
+      <br></div> -->
+
+
+   <!-- </div> -->
+
+
   <!-- <nav class="navbar navbar-default">
   <div class="container-fluid" class="row">
     <div class="container-fluid" style="text-decoration:none">
